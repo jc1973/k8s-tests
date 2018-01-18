@@ -2,3 +2,4 @@ kubectl exec --namespace=${NAMESPACE} ${TEST_POD_NAME} -- /download-run-tests.rb
 inspec exec k8s-tests/test/integration/default/inspec/default_spec.rb -t ssh://${TARGET_IP} -i /root/.ssh/id_rsa
 pytest -q k8s-tests/test/integration/default/testinfra/default_spec.py  --connection=ssh --hosts=${TARGET_IP} --ssh-identity-file=/root/.ssh/id_rsa --ssh-config=/ssh_config
 "
+echo hello
