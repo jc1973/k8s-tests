@@ -1,0 +1,8 @@
+mkdir -p /var/run/sshd
+apt-get update 
+apt-get install -y openssh-server
+echo # Addition packages needed for the tests in testinfra
+apt-get install -y net-tools curl
+/usr/sbin/sshd
+mkdir -p /root/.ssh
+chmod 0600 /root/.ssh
