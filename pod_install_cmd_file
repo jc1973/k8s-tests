@@ -6,3 +6,5 @@ apt-get install -y net-tools curl
 /usr/sbin/sshd
 mkdir -p /root/.ssh
 chmod 0600 /root/.ssh
+apt-get install -y cowsay
+/usr/games/cowsay -s hello
