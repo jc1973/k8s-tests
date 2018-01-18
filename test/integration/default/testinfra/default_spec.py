@@ -3,7 +3,7 @@ def test_nginx_is_installed(host):
     assert nginx.is_installed
 
 def test_socket_listening(Socket):
-    socket = Socket('tcp://0.0.0.0:80')
+    socket = Socket('tcp://127.0.0.1:80')
     assert socket.is_listening
 
 def test_command_output(Command):
