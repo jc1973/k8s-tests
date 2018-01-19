@@ -1,1 +1,2 @@
-/usr/games/cowsay -p goodbye && service nginx stop || killall5
+/usr/games/cowsay -p goodbye 
+service nginx stop
